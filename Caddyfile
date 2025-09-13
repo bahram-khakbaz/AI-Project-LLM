@@ -1,4 +1,5 @@
-[YOUR_DOMAIN] {
+# Caddyfile (example)
+ai.example.internal {
     encode gzip
     reverse_proxy /ollama/* ollama:11434 {
         header_up Host {host}
