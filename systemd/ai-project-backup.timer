@@ -1,0 +1,9 @@
+[Unit]
+Description=اجرای روزانه بکاپ پروژه هوش مصنوعی
+
+[Timer]
+OnCalendar=daily
+Persistent=true
+
+[Install]
+WantedBy=timers.target
