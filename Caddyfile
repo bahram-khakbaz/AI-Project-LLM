@@ -1,0 +1,12 @@
+[YOUR_DOMAIN] {
+    encode gzip
+    reverse_proxy /ollama/* ollama:11434 {
+        header_up Host {host}
+        header_up X-Real-IP {remote_host}
+    }
+    reverse_proxy /* open-webui:8080 {
+        header_up Host {host}
+        header_up X-Real-IP {remote_host}
+    }
+    tls internal
+}
