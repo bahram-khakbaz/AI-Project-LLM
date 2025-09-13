@@ -1,0 +1,6 @@
+[Unit]
+Description=بکاپ روزانه پروژه هوش مصنوعی
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/ai-project-backup.sh
